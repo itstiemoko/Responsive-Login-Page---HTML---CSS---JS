@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="src/favicon.png">
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Pratique | Veille by TS</title>
+</head>
+
+<body>
+   
+    <div class="container">
+        <div class="img">
+            <img src="src/img2.jpg" alt="image1">
+        </div>
+
+        <div class="container2">
+            <div class="logo">
+                <img src="src/logo.png" alt="logo">
+            </div>
+            <br action="#">
+            <div class="text">
+                <h1>Créer votre compte maintenant</h1>
+                <p>Construisons le futur ensemble</p>
+            </div>
+            <div class="input-box">
+                <input type="email" 
+                placeholder="Nom d'utilisateur, email, Numéro de téléphone" 
+                autofocus 
+                required 
+                id="username"/>
+            </div>
+            <div class="input-box">
+                <input type="password"
+                 placeholder="Mot de passe"
+                 required
+                 id="mdp"/>
+            </div>
+            <div class="remember">
+                <input type="checkbox"/><label for="checkbox">Se souvenir de moi</label>
+            </div>
+            <div class="buttons">
+                <input type="submit" class="btn" onclick="togglePopup()" value="S'inscrire"/><br>
+                <span>OR</span>
+                <!-- <div class="login_g"> -->
+
+                <div class="g_login_btn">
+                    <a href="#">
+                        <div class="btn_content">
+                            <div class="gimg">
+                                <img src="src/logo_google.png" alt="googlelogo">
+                            </div>
+                            <div class="textcontainer">
+                                <span>Se connecter avec Google</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- </div> -->
+            </div>
+            <div class="register-link">
+                <p>Vous avez un compte?
+                    <a href="#">Se connecter</a>
+                </p>
+            </div>
+
+
+
+            </form>
+        </div>
+
+    </div>
+    
+    <div id="popup">
+        <div class="popup_content">
+            <h1>Félicitations !!! Votre inscription a été effectué avec succès</h1>
+            <p>Bonjour <span id="1"></span> votre mdp est <span id="2"></span></p>
+            <a href="javascript:void(0)" class="popup-exit" onclick="togglePopup()">
+             <img src="src/fermer.png" alt="fermerpopup">
+            </a>
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
+   
+</body>
+
+</html>
